@@ -14,4 +14,4 @@ ADD config/solrconfig.xml /opt/solr/src/main/resources/solr/default/conf/solrcon
 
 EXPOSE 8983
 
-CMD ["/bin/bash", "-c", "cd /opt/solr; export MAVEN_OPTS="-Xmx256m" && mvn jetty:run "]
+CMD ["cd /opt/solr; export MAVEN_OPTS="-Xmx256m" && mvn jetty:run "]
