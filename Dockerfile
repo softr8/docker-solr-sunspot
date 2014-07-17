@@ -4,6 +4,7 @@ FROM jhamit/maven
 MAINTAINER Derek Kastner <dkastner@gmail.com>
 MAINTAINER Edwin Cruz <softr8@gmail.com>
 
+RUN apt-get update
 RUN apt-get --yes install git
 
 RUN git clone https://github.com/ksclarke/solr-jetty-maven /opt/solr
